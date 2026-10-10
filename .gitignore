@@ -1,0 +1,6 @@
+.editor-data/
+node_modules/
+*.log
+*.tmp
+.env
+.env.*

@@ -1,0 +1,13 @@
+{
+  "name": "rivaans-restaurant",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check app.js && node --check features.js && node --check i18n.js && node --check site.config.js && node --check server.mjs && node --check prepare-seo.mjs && node --check editor/server.mjs && node --check editor/restaurant.mjs && node --check editor/editor.js",
+    "test": "node --test editor/editor.test.mjs",
+    "seo": "node prepare-seo.mjs"
+  },
+  "engines": { "node": ">=22" }
+}

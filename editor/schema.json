@@ -1,0 +1,1277 @@
+{
+  "sections": [
+    {
+      "title": "Restaurant & contact",
+      "icon": "⌖",
+      "description": "Restaurant details and the contact number used for RSVP.",
+      "fields": [
+        {
+          "path": [
+            "name"
+          ],
+          "label": "Restaurant name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "path": [
+            "owner"
+          ],
+          "label": "Owner name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "path": [
+            "phone"
+          ],
+          "label": "Phone (+91...)",
+          "type": "text"
+        },
+        {
+          "path": [
+            "whatsapp"
+          ],
+          "label": "WhatsApp number (digits only)",
+          "type": "text"
+        },
+        {
+          "path": [
+            "city"
+          ],
+          "label": "City",
+          "type": "text"
+        },
+        {
+          "path": [
+            "address"
+          ],
+          "label": "Full address",
+          "type": "textarea"
+        },
+        {
+          "path": [
+            "hours"
+          ],
+          "label": "Opening hours",
+          "type": "text"
+        },
+        {
+          "path": [
+            "cuisine"
+          ],
+          "label": "Cuisine",
+          "type": "text"
+        },
+        {
+          "path": [
+            "description"
+          ],
+          "label": "Search description",
+          "type": "textarea"
+        },
+        {
+          "path": [
+            "sampleContent"
+          ],
+          "label": "Show sample-content labels",
+          "type": "boolean",
+          "help": "Keep on while any dishes, prices, reviews, menu or reel are samples."
+        }
+      ]
+    },
+    {
+      "title": "Instagram, delivery & menu",
+      "icon": "↗",
+      "description": "Add the official restaurant links. Empty links stay hidden.",
+      "fields": [
+        {
+          "path": [
+            "platformLinksSample"
+          ],
+          "label": "Platform links are sample homepages",
+          "type": "boolean",
+          "help": "Turn off after adding the restaurant’s official profile and listings."
+        },
+        {
+          "path": [
+            "instagramUrl"
+          ],
+          "label": "Instagram profile",
+          "type": "url"
+        },
+        {
+          "path": [
+            "zomatoUrl"
+          ],
+          "label": "Zomato restaurant listing",
+          "type": "url"
+        },
+        {
+          "path": [
+            "swiggyUrl"
+          ],
+          "label": "Swiggy restaurant listing",
+          "type": "url"
+        },
+        {
+          "path": [
+            "mapsUrl"
+          ],
+          "label": "Google Maps place link",
+          "type": "url"
+        },
+        {
+          "path": [
+            "reviewsUrl"
+          ],
+          "label": "Real review source link",
+          "type": "url"
+        },
+        {
+          "path": [
+            "menuUrl"
+          ],
+          "label": "Menu PDF",
+          "type": "file",
+          "help": "Upload your menu PDF or use an HTTPS PDF URL."
+        },
+        {
+          "path": [
+            "reelUrl"
+          ],
+          "label": "Instagram reel link",
+          "type": "url"
+        },
+        {
+          "path": [
+            "reelVideoUrl"
+          ],
+          "label": "Restaurant video",
+          "type": "file",
+          "help": "Upload MP4/WebM, or enter an HTTPS video URL."
+        }
+      ]
+    },
+    {
+      "title": "Photographs & owner",
+      "icon": "▣",
+      "description": "Use genuine restaurant photos and owner-approved statements.",
+      "fields": [
+        {
+          "path": [
+            "heroImage"
+          ],
+          "label": "Hero photograph",
+          "type": "image"
+        },
+        {
+          "path": [
+            "heroAlt"
+          ],
+          "label": "Hero image description",
+          "type": "text"
+        },
+        {
+          "path": [
+            "ingredientsImage"
+          ],
+          "label": "Ingredients photograph",
+          "type": "image"
+        },
+        {
+          "path": [
+            "kitchenPhoto"
+          ],
+          "label": "Kitchen photograph",
+          "type": "image"
+        },
+        {
+          "path": [
+            "kitchenPhotoAlt"
+          ],
+          "label": "Kitchen image description",
+          "type": "text"
+        },
+        {
+          "path": [
+            "kitchenStatement"
+          ],
+          "label": "Kitchen practices",
+          "type": "textarea"
+        },
+        {
+          "path": [
+            "sourcingStatement"
+          ],
+          "label": "Ingredient sourcing",
+          "type": "textarea"
+        },
+        {
+          "path": [
+            "ownerPhoto"
+          ],
+          "label": "Owner photograph",
+          "type": "image"
+        },
+        {
+          "path": [
+            "ownerStory"
+          ],
+          "label": "Owner story — English",
+          "type": "textarea"
+        },
+        {
+          "path": [
+            "ownerStoryMr"
+          ],
+          "label": "Owner story — Marathi",
+          "type": "textarea"
+        }
+      ]
+    },
+    {
+      "title": "Signature dishes",
+      "icon": "✳",
+      "collection": "signatureDishes",
+      "description": "Names, descriptions, prices, portions and photos. Edit English and Marathi together.",
+      "fields": [
+        {
+          "path": [
+            "name"
+          ],
+          "label": "Name — English",
+          "type": "text"
+        },
+        {
+          "path": [
+            "nameMr"
+          ],
+          "label": "Name — Marathi",
+          "type": "text"
+        },
+        {
+          "path": [
+            "description"
+          ],
+          "label": "Description — English",
+          "type": "textarea"
+        },
+        {
+          "path": [
+            "descriptionMr"
+          ],
+          "label": "Description — Marathi",
+          "type": "textarea"
+        },
+        {
+          "path": [
+            "price"
+          ],
+          "label": "Price in INR",
+          "type": "number",
+          "min": 0,
+          "max": 100000
+        },
+        {
+          "path": [
+            "portion"
+          ],
+          "label": "Portion — English",
+          "type": "text"
+        },
+        {
+          "path": [
+            "portionMr"
+          ],
+          "label": "Portion — Marathi",
+          "type": "text"
+        },
+        {
+          "path": [
+            "image"
+          ],
+          "label": "Dish photograph",
+          "type": "image"
+        },
+        {
+          "path": [
+            "alt"
+          ],
+          "label": "Image description",
+          "type": "text"
+        }
+      ],
+      "template": {
+        "name": "",
+        "nameMr": "",
+        "description": "",
+        "descriptionMr": "",
+        "price": 0,
+        "portion": "",
+        "portionMr": "",
+        "image": "",
+        "alt": ""
+      }
+    },
+    {
+      "title": "Gallery",
+      "icon": "▣",
+      "collection": "gallery",
+      "fields": [
+        {
+          "path": [
+            "category"
+          ],
+          "label": "Category",
+          "type": "select",
+          "options": [
+            "food",
+            "moments",
+            "ingredients"
+          ]
+        },
+        {
+          "path": [
+            "title"
+          ],
+          "label": "Caption",
+          "type": "text"
+        },
+        {
+          "path": [
+            "src"
+          ],
+          "label": "Photograph",
+          "type": "image"
+        },
+        {
+          "path": [
+            "alt"
+          ],
+          "label": "Image description",
+          "type": "text"
+        },
+        {
+          "path": [
+            "illustrative"
+          ],
+          "label": "Illustrative stock photo",
+          "type": "boolean"
+        }
+      ],
+      "template": {
+        "category": "food",
+        "title": "",
+        "src": "",
+        "alt": "",
+        "illustrative": false
+      }
+    },
+    {
+      "title": "Real guest reviews",
+      "icon": "“",
+      "collection": "reviews",
+      "description": "Add genuine reviews and their source links. Sample testimonials are separate.",
+      "fields": [
+        {
+          "path": [
+            "name"
+          ],
+          "label": "Guest name",
+          "type": "text"
+        },
+        {
+          "path": [
+            "text"
+          ],
+          "label": "Exact review",
+          "type": "textarea"
+        },
+        {
+          "path": [
+            "source"
+          ],
+          "label": "Source name",
+          "type": "text"
+        },
+        {
+          "path": [
+            "url"
+          ],
+          "label": "Original review URL",
+          "type": "url"
+        }
+      ],
+      "template": {
+        "name": "",
+        "text": "",
+        "source": "",
+        "url": ""
+      }
+    },
+    {
+      "title": "Sample testimonials",
+      "icon": "◇",
+      "collection": "sampleReviews",
+      "description": "Design preview only. Hidden when real reviews are added or sample mode is off.",
+      "fields": [
+        {
+          "path": [
+            "name"
+          ],
+          "label": "Sample name — English",
+          "type": "text"
+        },
+        {
+          "path": [
+            "nameMr"
+          ],
+          "label": "Sample name — Marathi",
+          "type": "text"
+        },
+        {
+          "path": [
+            "text"
+          ],
+          "label": "Sample text — English",
+          "type": "textarea"
+        },
+        {
+          "path": [
+            "textMr"
+          ],
+          "label": "Sample text — Marathi",
+          "type": "textarea"
+        }
+      ],
+      "template": {
+        "name": "",
+        "nameMr": "",
+        "text": "",
+        "textMr": ""
+      }
+    },
+    {
+      "title": "Page text 1",
+      "icon": "Aa",
+      "description": "Editable page text in English and Marathi. The preview updates as you type.",
+      "fields": [
+        {
+          "path": [
+            "copy",
+            "text001"
+          ],
+          "label": "A LITTLE HUNGER. A LOT OF HEART.",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text002"
+          ],
+          "label": "Come for the food.",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text003"
+          ],
+          "label": "Stay for the",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text004"
+          ],
+          "label": "good times.",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text005"
+          ],
+          "label": "SOMETHING TO GET YOUR APPETITE GOING",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text006"
+          ],
+          "label": "Meet your next",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text007"
+          ],
+          "label": "favourite dish.",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text008"
+          ],
+          "label": "The comfort-food mood.",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text009"
+          ],
+          "label": "For when the plan calls for something warm and wonderfully familiar.",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text010"
+          ],
+          "label": "The one-more-bite mood.",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text011"
+          ],
+          "label": "Because catching up is even better with something delicious to share.",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text012"
+          ],
+          "label": "The share-everything mood.",
+          "type": "localized",
+          "multiline": false
+        }
+      ]
+    },
+    {
+      "title": "Page text 2",
+      "icon": "Aa",
+      "description": "Editable page text in English and Marathi. The preview updates as you type.",
+      "fields": [
+        {
+          "path": [
+            "copy",
+            "text013"
+          ],
+          "label": "Bring your appetite. Bring your people. Make a little time for both.",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text014"
+          ],
+          "label": "Signature dish names, prices and portions are coming soon. These photos are insp",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text015"
+          ],
+          "label": "A LITTLE TASTE OF THE GOOD TIMES",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text016"
+          ],
+          "label": "More than a meal.",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text017"
+          ],
+          "label": "A moment.",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text018"
+          ],
+          "label": "A quick glimpse of the food, the space, and the moments that bring people togeth",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text019"
+          ],
+          "label": "More stories.",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text020"
+          ],
+          "label": "THIS IS YOUR SIGN TO MAKE THAT PLAN",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text021"
+          ],
+          "label": "The best ingredient?",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text022"
+          ],
+          "label": "Your people.",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text023"
+          ],
+          "label": "Some plans deserve more than a message in the group chat. Bring them to the tabl",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text024"
+          ],
+          "label": "Rivaan’s is a pure vegetarian, multicuisine restaurant opposite Lions Club in Ic",
+          "type": "localized",
+          "multiline": true
+        }
+      ]
+    },
+    {
+      "title": "Page text 3",
+      "icon": "Aa",
+      "description": "Editable page text in English and Marathi. The preview updates as you type.",
+      "fields": [
+        {
+          "path": [
+            "copy",
+            "text025"
+          ],
+          "label": "THE PERSON BEHIND RIVAAN’S",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text026"
+          ],
+          "label": "Say hello to",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text027"
+          ],
+          "label": "Abhijeet.",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text028"
+          ],
+          "label": "02 / MAKE ROOM FOR A GOOD TIME",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text029"
+          ],
+          "label": "A table for",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text030"
+          ],
+          "label": "every kind of together.",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text031"
+          ],
+          "label": "With the whole family",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text032"
+          ],
+          "label": "Make time for a shared meal and a conversation that includes everyone.",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text033"
+          ],
+          "label": "With your favourite people",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text034"
+          ],
+          "label": "Turn “we should meet soon” into an actual plan. Start with a table.",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text035"
+          ],
+          "label": "For a little celebration",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text036"
+          ],
+          "label": "Have a birthday or group gathering in mind? Ask Abhijeet about the possibilities",
+          "type": "localized",
+          "multiline": true
+        }
+      ]
+    },
+    {
+      "title": "Page text 4",
+      "icon": "Aa",
+      "description": "Editable page text in English and Marathi. The preview updates as you type.",
+      "fields": [
+        {
+          "path": [
+            "copy",
+            "text037"
+          ],
+          "label": "A taste of the atmosphere",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text038"
+          ],
+          "label": "Illustrative stock photography. Actual Rivaan’s food, restaurant and guest photo",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text039"
+          ],
+          "label": "03 / THERE’S MORE TO A MEAL",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text040"
+          ],
+          "label": "Good food starts",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text041"
+          ],
+          "label": "behind the scenes.",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text042"
+          ],
+          "label": "A look inside our kitchen",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text043"
+          ],
+          "label": "A space worth showing you.",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text044"
+          ],
+          "label": "Every ingredient has a story.",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text045"
+          ],
+          "label": "WHY GET TO KNOW RIVAAN’S?",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text046"
+          ],
+          "label": "A real person to talk to.",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text047"
+          ],
+          "label": "Contact owner Abhijeet directly to discuss your plans.",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text048"
+          ],
+          "label": "Make an informed choice.",
+          "type": "localized",
+          "multiline": false
+        }
+      ]
+    },
+    {
+      "title": "Page text 5",
+      "icon": "Aa",
+      "description": "Editable page text in English and Marathi. The preview updates as you type.",
+      "fields": [
+        {
+          "path": [
+            "copy",
+            "text049"
+          ],
+          "label": "Ask about the menu, ingredients, seating, and your group’s needs.",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text050"
+          ],
+          "label": "Local, and easy to reach.",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text051"
+          ],
+          "label": "Plan your next meal right here in Ichalkaranji.",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text052"
+          ],
+          "label": "GIVE YOUR NEXT OCCASION A TABLE",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text053"
+          ],
+          "label": "A little celebration.",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text054"
+          ],
+          "label": "A lot of together.",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text055"
+          ],
+          "label": "Birthday plans",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text056"
+          ],
+          "label": "Tell us your date and guest count. Ask about cake, decorations and arrangements.",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text057"
+          ],
+          "label": "Family occasions",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text058"
+          ],
+          "label": "Bring everyone together. Discuss seating and dining needs with Abhijeet.",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text059"
+          ],
+          "label": "Friends & groups",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text060"
+          ],
+          "label": "A reunion, a team meal, or a long-overdue catch-up. Send us your plan.",
+          "type": "localized",
+          "multiline": true
+        }
+      ]
+    },
+    {
+      "title": "Page text 6",
+      "icon": "Aa",
+      "description": "Editable page text in English and Marathi. The preview updates as you type.",
+      "fields": [
+        {
+          "path": [
+            "copy",
+            "text061"
+          ],
+          "label": "Capacity, pricing and celebration arrangements are confirmed individually by the",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text062"
+          ],
+          "label": "04 / FROM YOUR SIDE OF THE TABLE",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text063"
+          ],
+          "label": "Good memories.",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text064"
+          ],
+          "label": "In your own words.",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text065"
+          ],
+          "label": "Your experience belongs here.",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text066"
+          ],
+          "label": "Already visited Rivaan’s? We’d love to hear what made your meal memorable. This ",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text067"
+          ],
+          "label": "05 / LET’S GET TOGETHER",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text068"
+          ],
+          "label": "Your next good memory",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text069"
+          ],
+          "label": "starts with a hello.",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text070"
+          ],
+          "label": "Reserve your seat.",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text071"
+          ],
+          "label": "RSVP for a meal or celebration. Abhijeet will confirm availability.",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text072"
+          ],
+          "label": "A FEW THINGS YOU MIGHT BE WONDERING",
+          "type": "localized",
+          "multiline": true
+        }
+      ]
+    },
+    {
+      "title": "Page text 7",
+      "icon": "Aa",
+      "description": "Editable page text in English and Marathi. The preview updates as you type.",
+      "fields": [
+        {
+          "path": [
+            "copy",
+            "text073"
+          ],
+          "label": "Where is Rivaan’s located?",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text074"
+          ],
+          "label": "Can I plan a family meal or a group visit?",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text075"
+          ],
+          "label": "Yes, you can send an enquiry using the form above. Please confirm seating, avail",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text076"
+          ],
+          "label": "How can I see the menu?",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text077"
+          ],
+          "label": "What about allergies or dietary requirements?",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text078"
+          ],
+          "label": "Please discuss ingredients, preparation, and possible cross-contact directly wit",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text079"
+          ],
+          "label": "FOLLOW, EXPLORE & ORDER",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text080"
+          ],
+          "label": "Find Rivaan’s",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text081"
+          ],
+          "label": "online.",
+          "type": "localized",
+          "multiline": false
+        },
+        {
+          "path": [
+            "copy",
+            "text082"
+          ],
+          "label": "Keep up with our moments, or explore our delivery listings.",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text083"
+          ],
+          "label": "A meal. A conversation. A memory.",
+          "type": "localized",
+          "multiline": true
+        },
+        {
+          "path": [
+            "copy",
+            "text084"
+          ],
+          "label": "THE CURRENT MENU",
+          "type": "localized",
+          "multiline": true
+        }
+      ]
+    },
+    {
+      "title": "Page text 8",
+      "icon": "Aa",
+      "description": "Editable page text in English and Marathi. The preview updates as you type.",
+      "fields": [
+        {
+          "path": [
+            "copy",
+            "text085"
+          ],
+          "label": "Ask Abhijeet for the latest dishes and prices on WhatsApp.",
+          "type": "localized",
+          "multiline": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 const marathi = {
+  'Home':'मुख्यपृष्ठ','Moments':'क्षण','About us':'आमच्याबद्दल',
   'FOLLOW, EXPLORE & ORDER':'फॉलो करा, पाहा आणि ऑर्डर करा','Find Rivaan’s':'Rivaan’s ला शोधा','online.':'ऑनलाइन.','Keep up with our moments, or explore our delivery listings.':'आमच्या क्षणांची झलक पाहा किंवा डिलिव्हरीचे पर्याय शोधा.','Sample links open the platform homepages. Replace them with Rivaan’s official listings before launch.':'नमुना दुवे प्लॅटफॉर्मचे मुख्य पान उघडतात. प्रकाशित करण्यापूर्वी Rivaan’s चे अधिकृत दुवे जोडा.',
   'Reserve your seat ↗':'तुमची जागा आरक्षित करा ↗',
   'Sample menu':'नमुना मेनू','View the sample menu (design preview).':'नमुना मेनू पाहा (डिझाइनचा नमुना).','Sample dish · sample price':'नमुना पदार्थ · नमुना किंमत','Sample reel: a slideshow of illustrative food photographs, not footage of Rivaan’s.':'नमुना व्हिडिओ: प्रातिनिधिक खाद्यछायाचित्रांचा स्लाइडशो. हे Rivaan’s चे प्रत्यक्ष चित्रीकरण नाही.',

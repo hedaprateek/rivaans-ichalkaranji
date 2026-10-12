@@ -26,7 +26,67 @@ navToggle.addEventListener('click', () => {
   $('#navigation').classList.toggle('open', open);
 });
 $('#navigation').addEventListener('click', event => { if (event.target.closest('a') && navToggle.getAttribute('aria-expanded')==='true') navToggle.click(); });
-document.addEventListener('keydown', event => { if (event.key === 'Escape' && navToggle.getAttribute('aria-expanded') === 'true') navToggle.click(); });
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && navToggle.getAttribute('aria-expanded') === 'true') {
+    navToggle.click();
+    navToggle.focus();
+  }
+});
+// Keep related sections together, with one destination visible at a time.
+const pageSections = {
+  home: ['#home', '.ribbon'],
+  food: ['#flavours', '#care'],
+  moments: ['#reel', '#moments'],
+  celebrations: ['#celebrate'],
+  about: ['#story', '#owner', '#reviews'],
+  visit: ['#visit', '.faq', '#find-online']
+};
+for (const [page, selectors] of Object.entries(pageSections)) {
+  selectors.forEach(selector => { $(selector).dataset.page = page; });
+}
+let currentPage;
+function showDestination(hash = location.hash, moveFocus = false) {
+  let target;
+  try { target = document.getElementById(decodeURIComponent(hash.slice(1))); } catch {}
+  const page = target?.closest('[data-page]')?.dataset.page;
+  // Dialogs and the skip link do not change the current destination.
+  if (hash && !page && currentPage) return;
+  const nextPage = page || 'home';
+  const changed = currentPage !== nextPage;
+  document.querySelectorAll('[data-page]').forEach(section => { section.hidden = section.dataset.page !== nextPage; });
+  document.querySelectorAll('[data-nav-page]').forEach(link => {
+    if (link.dataset.navPage === nextPage) link.setAttribute('aria-current', 'page');
+    else link.removeAttribute('aria-current');
+  });
+  if (changed) document.querySelector('#restaurant-video')?.pause();
+  currentPage = nextPage;
+  if (navToggle.getAttribute('aria-expanded') === 'true') navToggle.click();
+  if (target && page) {
+    target.scrollIntoView({ behavior: 'instant', block: 'start' });
+    if (moveFocus) {
+      const focusTarget = target.querySelector('h1, h2') || target;
+      focusTarget.setAttribute('tabindex', '-1');
+      focusTarget.focus({ preventScroll: true });
+    }
+  }
+}
+showDestination();
+window.addEventListener('hashchange', () => showDestination(location.hash, true));
+document.addEventListener('click', event => {
+  const link = event.target.closest('a[href^="#"]');
+  if (!link || event.defaultPrevented || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || event.button !== 0) return;
+  const hash = link.getAttribute('href');
+  let target;
+  try { target = document.getElementById(decodeURIComponent(hash.slice(1))); } catch {}
+  if (!target?.closest('[data-page]')) return;
+  event.preventDefault();
+  if (location.hash !== hash) history.pushState(null, '', hash);
+  showDestination(hash, !link.hasAttribute('data-occasion'));
+  if (link.hasAttribute('data-occasion')) $('#guest-name').focus({ preventScroll: true });
+});
+document.addEventListener('click', event => {
+  if (!event.target.closest('.header') && navToggle.getAttribute('aria-expanded') === 'true') navToggle.click();
+});
 function handleImageError(img) { img.addEventListener('error', () => img.parentElement.classList.add('image-error')); if (img.complete && !img.naturalWidth) img.parentElement.classList.add('image-error'); }
 document.querySelectorAll('img:not(#dialog-image)').forEach(handleImageError);
 const dialog = $('#photo-dialog');

@@ -35,3 +35,7 @@ Use **Download content backup** and **Restore a content backup** for JSON backup
 GitHub Pages publishes branch `main` from its root. Initial source, editor and tests are included in the repository; the local editor subsequently updates only public site files, preserving the remaining source. It includes `features.js`, `i18n.js`, PDF/video assets, robots.txt and sitemap.xml.
 
 For another domain, use `npm run seo -- https://YOUR-DOMAIN/ assets/social-card.png`. The publisher sets canonical/social URLs and the sitemap for its reviewed repository destination. Restaurant metadata renders into published HTML as well as the interactive site.
+
+## Site navigation
+
+The sticky top navigation shows one destination at a time: Home, The food, Moments, Celebrations, About us, or RSVP. At narrower widths it becomes a hamburger menu. Existing section links open the matching destination, and browser Back/Forward and bookmarked section URLs work. Without JavaScript, all content remains readable; printing includes every destination and the separate studio credit.
